@@ -1,0 +1,9 @@
+spring:
+  rabbitmq:
+    port: 5672
+    host: 192.168.101.129
+    username: admin
+    password: 123456
+#    listener:
+#      simple:
+#        prefetch: 1
