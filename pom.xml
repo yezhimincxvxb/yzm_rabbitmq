@@ -8,7 +8,18 @@
     <artifactId>yzm_rabbitmq</artifactId>
     <version>1.0-SNAPSHOT</version>
     <modules>
-        <module>rabbitmq_01</module>
+        <module>rabbitmq_quick_start</module>
+        <module>rabbitmq_consumer_prefetch</module>
+        <module>rabbitmq_consumer_ack</module>
+        <module>rabbitmq_consumer_retry</module>
+        <module>rabbitmq_exchange</module>
+        <module>rabbitmq_exchange_alternate</module>
+        <module>rabbitmq_provider_callback</module>
+        <module>rabbitmq_queue_dead_letter</module>
+        <module>rabbitmq_queue_ttl</module>
+        <module>rabbitmq_channel</module>
+        <module>rabbitmq_channel_txSelect</module>
+        <module>rabbitmq_channel_confirm</module>
     </modules>
     <packaging>pom</packaging>
 
@@ -50,6 +61,39 @@
             </dependency>
         </dependencies>
     </dependencyManagement>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-amqp</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.alibaba.fastjson2</groupId>
+            <artifactId>fastjson2</artifactId>
+        </dependency>
+    </dependencies>
 
     <build>
         <resources>

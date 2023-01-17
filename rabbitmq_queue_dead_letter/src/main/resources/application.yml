@@ -1,0 +1,9 @@
+spring:
+  rabbitmq:
+    port: 5672
+    host: 192.168.192.128
+    username: admin
+    password: 1234
+    listener:
+      simple:
+        acknowledge-mode: manual

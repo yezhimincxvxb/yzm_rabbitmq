@@ -1,0 +1,11 @@
+spring:
+  rabbitmq:
+    port: 5672
+    host: 192.168.192.128
+    username: admin
+    password: 1234
+    publisher-confirm-type: correlated
+    publisher-returns: true
+    template:
+      # 强制的。true表示路由失败由监听回调处理，false表示直接丢弃
+      mandatory: true
