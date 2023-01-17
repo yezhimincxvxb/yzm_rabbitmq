@@ -20,6 +20,7 @@
         <module>rabbitmq_channel</module>
         <module>rabbitmq_channel_txSelect</module>
         <module>rabbitmq_channel_confirm</module>
+        <module>rabbitmq_channel_priority</module>
     </modules>
     <packaging>pom</packaging>
 
