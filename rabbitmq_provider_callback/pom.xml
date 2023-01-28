@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>rabbitmq_provider_confirm</artifactId>
+    <artifactId>rabbitmq_provider_callback</artifactId>
 
 
 </project>
